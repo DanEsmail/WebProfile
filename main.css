@@ -1,0 +1,83 @@
+/*-------------------Gobal area -------------------------->*/
+div{
+  border: solid pink;
+}
+
+/*-------------------Nav area -------------------------->*/
+nav{
+  height: 3em;
+  border: solid green;
+}
+.nav-boxes{
+  display: inline-block;
+}
+#links{
+  float: left;
+}
+#socials{
+  float: right;
+}
+
+
+/*-------------------About me area -------------------------->*/
+section{
+  border: solid blue;
+  text-align: center;
+
+}
+
+section h1 {
+
+}
+#about-me-section {
+}
+
+#about-me-section div{
+  position: relative;
+  margin: 1em;
+
+}
+
+
+
+#picture{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  left: 45%;
+
+
+}
+
+#about-me{
+  width: 20em;
+  height: 10em;
+  left: 40%;
+}
+
+
+/*-------------------Project area -------------------------->*/
+#tag-bar{
+  height: 4em;
+  width: 30em;
+  position: relative;
+  left: 38%;
+  border-radius: 15%;
+}
+#tag-bar a{
+  position: relative;
+  top: 35%;
+}
+
+.projects{
+  display: inline-block;
+  width: 8em;
+  height: 8em;
+  margin: 1em 0.5em 1em 0.5em;
+}
+
+svg{
+  margin: 1em;
+  width: 8em;
+  height: 8em;
+}
