@@ -1,83 +1,82 @@
-/*-------------------Gobal area -------------------------->*/
+/*-------------------General--------------------------*/
 div{
-  border: solid pink;
-}
 
-/*-------------------Nav area -------------------------->*/
-nav{
-  height: 3em;
-  border: solid green;
 }
-.nav-boxes{
+#containt-holder{
+
+  width: 91%;
+  margin: 0 auto;
+  position: relative;
+  left: 0.35%;
+}
+/*-------------------Header---------------------------*/
+
+header{
+  height: 5em;
+  width: 90%;
+  border: solid purple;
+  margin: 0 auto;
+}
+/*-------------------Aside----------------------------*/
+
+#nav-area{
+  height: 52em;
+  width: 10%;
+  border: solid black 0.2em;
   display: inline-block;
-}
-#links{
+  margin-right: 0px;
   float: left;
-}
-#socials{
-  float: right;
-}
-
-
-/*-------------------About me area -------------------------->*/
-section{
-  border: solid blue;
   text-align: center;
+  background-color: #0E4C92;
+
+
 
 }
-
-section h1 {
-
-}
-#about-me-section {
-}
-
-#about-me-section div{
-  position: relative;
-  margin: 1em;
-
-}
-
-
-
 #picture{
+  height: 8em;
   width: 10em;
-  height: 10em;
   border-radius: 50%;
-  left: 45%;
-
-
+  border: solid black;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
-
-#about-me{
-  width: 20em;
-  height: 10em;
-  left: 40%;
-}
-
-
-/*-------------------Project area -------------------------->*/
-#tag-bar{
-  height: 4em;
-  width: 30em;
+.nav-link{
+  border: solid black 0.1em;
+  width: 100%;
+  height: 2em;
+  display: block;
   position: relative;
-  left: 38%;
-  border-radius: 15%;
-}
-#tag-bar a{
-  position: relative;
-  top: 35%;
+  padding-top: 1em;
 }
 
-.projects{
+.nav-link:hover{
+  left: 30%;
+}
+
+
+/*-------------------Main-containt--------------------*/
+
+#main-containt{
+  height: 40em;
+  width: 88.55%;
+
   display: inline-block;
-  width: 8em;
-  height: 8em;
-  margin: 1em 0.5em 1em 0.5em;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-
-svg{
-  margin: 1em;
-  width: 8em;
-  height: 8em;
+.containt-header{
+  height: 4em;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: solid black 0.2em;
+}
+.containt-body{
+  height: 35.2em;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: solid black 0.2em;
 }
