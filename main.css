@@ -2,39 +2,485 @@
 
 /*-------------------Header---------------------------*/
 
-header{
+
+/*-------------------Aside----------------------------*/
+
+
+#nav-area{
+  height: 100%;
+  width: 7em;
+  display: inline-block;
+  margin-right: 0px;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  text-align: left;
+  background-color: Black;
+  text-align: center;
+  box-shadow: 0.5em 0 0.5em rgba(0,0,100,0.2);
+  /*border-right: solid rgb(91, 155, 255, 0.7) 0.3em;*/
+
+}
+
+
+#nav-holder{
+  width: 100%;
+  position: relative;
+
+}
+#picture{
+  height: 8em;
+  width: 80%;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#about-me{
+  background: linear-gradient(#006dff, #26abff, #8cd3ff, #8cd3ff, #26abff, #006dff);
+}
+#projects{
+  background: linear-gradient(#006dff, #26abff, #8cd3ff, #8cd3ff, #26abff, #006dff);
+}
+#skills{
+  background: linear-gradient(#006dff, #26abff, #8cd3ff, #8cd3ff, #26abff, #006dff);
+}
+#blog{
+  background: linear-gradient(#006dff, #26abff, #8cd3ff, #8cd3ff, #26abff, #006dff);
+}
+#contact{
+  background: linear-gradient(#006dff, #26abff, #8cd3ff, #8cd3ff, #26abff, #006dff);
+}
+#whats-new{
+  background: linear-gradient(#006dff, #26abff, #8cd3ff, #8cd3ff, #26abff, #006dff);
+}
+
+#nav-name{
+    border-bottom: solid #5B9BFF 0.2em;
+    height: 5%;
+    text-align: center;
+}
+#nav-name p{
+  color:white;
+
+}
+.nav-link{
+  width: 7em;
+  height: 4em;
+  display: block;
+  position: relative;
+  padding-top: 1em;
+  color: black;
+  text-decoration: none;
+  z-index: 5;
+  background-color: black;
+  transition: all .4s ease;
+  color: rgba(0, 0, 0, 0);
+  overflow:hidden;
+}
+
+.nav-link span{
+  display: hidden;
+  color: black;
+  position: absolute;
+  top: 2em;
+  z-index: 10;
+}
+
+
+.nav-link:hover{
+  transform:  translate(0.5em);
+  transition: all .4s ease;
+  width: 12em;
+  color: white;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 100, 0.2);
+}
+
+.nav-link:hover span{
+  display: inline-block;
+  color: white;
+}
+
+.nav-link::after{
+  content: '';
+  width: 3em;
+  height: 0.2em;
+  background-color: #5B9BFF;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.link-img{
+  width: 2em;
+  height: 2em;
+  margin: 0.25em 1em 1em 1em;
+  display: inline-block;
+
+}
+
+
+/*-------------------Main-containt--------------------*/
+
+#main-containt{
+  height: 40em;
+  width: 100%;
+  position: absolute;
+  left: 7em;
+  top: 0;
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+  z-index: 1;
+
+}
+
+.containt-container{
+  position: relative;
+  top: 0px;
+}
+
+.containt-header{
+  height: 2em;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #5B9BFF;
+
+}
+.containt-header h3{
+  font-size: 1em;
+  padding: 0.5em 0 0 0;
+  margin: 0;
+
+  color: white;
+
+
+}
+
+
+.containt-body{
+  height: 40em;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 1;
+  background-color: #F0F0F0;
+  /*background-image: url("./Images/technology-background.jpg");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-me-div{
+    display: inline-block;
+}
+
+/* ****** About me ******** */
+
+#about-me-body{
+  background-image: url("./Images/technology-background.jpg");
+  background-repeat: no-repeat;
+  background-size:  cover;
+}
+
+#about-me-picture{
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  z-index: 3;
+  top: 2em;
+  left: 12em;
+}
+.profile-pic{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#about-me-text{
+  width: 60%;
+  height: 20em;
+  position: relative;
+  z-index: 2;
+  top: 11em;
+  left: 21em;
+  background-color: white;
+  box-shadow: 0.5em 0.5em 2em rgba(0, 0, 0, 0.2);
+}
+#about-me-text h3{
+  margin-bottom: 1em;
+  padding-left: 7em;
+  padding-top: 0.5em;
+  background-color: orange;
+}
+#about-me-text p{
+  text-indent: 3em;
+  padding: 0.5em;
+}
+/* ****** Projects ******** */
+
+#project-body{
+  text-align: center;
+}
+
+#project-search-bar{
+  width: 60em;
+  height: 6em;
+  background-color: pink;
+  margin: 0 auto;
+
+  display: block;
+  position: relative;
+  top: 1em
+}
+
+#project-container{
+  margin: 0 auto;
+}
+
+.project-frame{
+  background-color: blue;
+  width: 15em;
+  height: 17em;
+  display: inline-block;
+  margin: 2em 1.5em 2em 1.5em;
+  margin-top: 3em;
+  overflow: hidden;
+}
+
+.project-frame details{
+  position: relative;
+  display: block;
+  top: 2em;
+}
+
+.project-box{
+  position: relative;
+  background-color: purple;
+  height: 10em;
+  width: 13em;
+  top: 1em;
+  left: 1em;
+
+}
+
+
+/* ****** Skills ******** */
+#skills-body{
+  background-image: url("./Images/backgrounds/Coding-BG.jpg");
+}
+
+
+.skill-bar{
+  width: 12em;
+  height: 90%;
+  position: relative;
+  margin-top: 0;
+  z-index: 2;
+  background-color: white;
+  /*box-shadow: 0em 0em 1em rgba(0,0,0,0.2);*/
+  margin-left: 20.5em;
+  top: 0em;
+  left: 0;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.skill-bar h5{
+  margin: 0 0 0.5em 0;
+  padding-bottom: 1em;
+  display: block;
+  position: relative;
+  top: 0.5em;
+  display: grid;
+}
+.skill-bar img{
+
+  display: grid;
+  width: 6em;
+  height: 6em;
+  padding-bottom:  1em;
+  position: relative;
+  left: 3em
+
+}
+/* ****** Blog ******** */
+
+#blog-container{
+  background-color: white;
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 2em;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.2);
+
+}
+
+#Blog{
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+
+}
+
+.blog-column{
+  display: inline-block;
+
+  width: 49%;
+  float: right;
+}
+#first-column{
+  float: left;
+}
+#first-column::after{
+  content: '';
+  display: block;
+  position: relative;
+
+
+}
+
+.blog-list-item{
+  list-style: none;
+}
+.blog-list-item:hover{
+  transition: all .4s ease;
+  transform: translateY(-0.5em);
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  background-color: rgba(175,206,235,0.5);
+}
+.blog-block{
+  color: black;
+  text-decoration: none;
+}
+ul:first-child::before{
+  content: '';
+  width: 100%;
+  height: 0.05em;
+  background-color: black;
+  display: block;
+}
+.blog-link::after{
+  content: '';
+  width: 100%;
+  height: 0.05em;
+  background-color: black;
+  display: block;
+}
+
+
+
+.blog-title{
+  font-size: 1.8em;
+  text-decoration: underline;
+  position:relative;
+  left: 0.5em;
+  margin: 0.5em 0 0.5em 0;
+
+}
+.blog-summary{
+  position:relative;
+  left: 1em;
+  margin: 0.5em 0;
+}
+
+
+
+#blog-more{
+  text-align: center;
+  display: block;
+  position: relative;
+  height: 1em;
+  font-size: 1em;
+
+}
+
+
+/* ****** Contacts ******** */
+
+
+form{
+  position: relative;
+  left: 20em;
+}
+
+/* ****** Learning ******** */
+.learning-column{
+  height: 36em;
+  width: 40em;
+  box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin-left: 13em;
+  text-align: center;
+  position: relative;
+  top: 5%;
+  background-color: white;
+  justify-content: center;
+  overflow: hidden;
+}
+.learning-column h1::after{
+  content: '';
+  display: block;
+  height: 0.1em;
+  background-color: black;
+  width: 13em;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.learning-box{
+  display: inline-block;
+
+
+}
+
+.learning-information{
+  width: 100%;
+  float: left;
+
+}
+.learning-information li{
+    list-style-type: none;
+    position: relative;
+    left: -1em;
+}
+.learning-badge .skill-badge{
+  margin-left: 2em;
+
+}
+
+
+/*-------------------footer---------------------------*/
+footer{
   height: 3.5em;
   width: 100%;
   margin: 0 auto;
-  background-color: black;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  box-shadow: 1em 1em 1em rgba(0,0,0,0.2);
+  background-color: grey;
+  text-align: center;
 
 }
 
-#name{
-  font-style: italic;
-  margin: 0.25em 0 0.25em 2%;
-  color: #4687F4;
-  width: 50%;
-  display: inline-block;
-  float: left;
-  font-size: 2em;
 
-  font-weight: bold;
-
-}
 .socials{
   width: 1.5em;
   height: 1.5em;
-  margin: 0.75em 1em 0.75em 0em;
-  float: right;
+  margin: 0.75em ;
+
   display: inline-block;
   position: relative;
-    z-index: 2;
+  z-index: 2;
 }
 .soicals-img{
   width: 2em;
@@ -55,205 +501,4 @@ header{
 }
 #github{
 
-}
-/*-------------------Aside----------------------------*/
-
-
-#nav-area{
-  height: 100%;
-  width: 4em;
-  display: inline-block;
-  margin-right: 0px;
-  float: left;
-  position: fixed;
-  top: 3.5em;
-  left: 0;
-  z-index: 2;
-  text-align: left;
-  background-color: black;
-
-
-}
-#nav-holder{
-  width: 100%;
-  position: relative;
-
-}
-#picture{
-  height: 8em;
-  width: 80%;
-  border-radius: 50%;
-  margin: 0 auto;
-  background-color: white;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-#about-me{
-  background-color: red;
-}
-#projects{
-  background-color: green;
-}
-#skills{
-  background-color: purple;
-}
-#blog{
-  background-color: blue;
-}
-#contact{
-  background-color: orange;
-}
-#whats-new{
-  background-color: yellow;
-}
-.nav-link{
-  width: 4em;
-  height: 4em;
-  display: block;
-  position: relative;
-  padding-top: 1em;
-  color: black;
-  text-decoration: none;
-  z-index: 5;
-  background-color: black;
-  transition: all .4s ease;
-  color: rgba(0, 0, 0, 0);
-  overflow:hidden;
-}
-
-.nav-link span{
-  display: hidden;
-  color: black;
-  position: absolute;
-  top: 2em;
-  z-index: 10;
-
-
-
-}
-
-
-.nav-link:hover{
-  transform:  translate(1em);
-  transition: all .4s ease;
-  width: 8em;
-  color: white;
-}
-
-.nav-link:hover span{
-  display: inline-block;
-  color: white;
-}
-.link-img{
-  width: 2em;
-  height: 2em;
-  margin: 0.25em 1em 1em 1em;
-  display: inline-block;
-}
-
-
-/*-------------------Main-containt--------------------*/
-
-#main-containt{
-  height: 40em;
-  width: 100%;
-  position: absolute;
-  left: 4em;
-  top: 3.5em;
-  display: inline-block;
-  margin-left: 0px;
-  margin-right: 0px;
-  z-index: 1;
-
-}
-
-.containt-container{
-  position: relative;
-  top: 0px;
-}
-
-.containt-header{
-  height: 3em;
-  text-align: left;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-color: #4687F4;
-
-}
-.containt-header h1{
-  font-size: 2em;
-  padding: 0.75em 0 0.75em 0;
-  margin: 0;
-  margin-left: 2em;
-
-
-}
-
-
-.containt-body{
-  height: 35.2em;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  position: relative;
-  z-index: 1;
-  background-color: #F0F0F0;
-  /*background-image: url("./Images/technology-background.jpg");*/
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.about-me-div{
-    display: inline-block;
-}
-
-#about-me-picture{
-  width: 15em;
-  height: 15em;
-  border-radius: 50%;
-  position: absolute;
-  background-color: white;
-  z-index: 3;
-  top: 2em;
-  left: 2em;
-}
-.profile-pic{
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-#about-me-text{
-  width: 55%;
-  height: 20em;
-  position: relative;
-  z-index: 2;
-  top: 11em;
-  left: 11em;
-  background-color: white;
-  box-shadow: 0.5em 0.5em 2em rgba(0, 0, 0, 0.2);
-}
-#about-me-text h3{
-  margin-bottom: 1em;
-  padding-left: 7em;
-  padding-top: 0.5em;
-  background-color: orange;
-}
-#about-me-text p{
-  text-indent: 3em;
-  padding: 0.5em;
-}
-
-.skill-bar{
-  width: 10%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  background-color: white;
-  box-shadow: 0 1em 1em rgba(0,0,0,0.2);
-  margin-left: 10%;
-  left: 0;
-  display: inline-block;
 }
