@@ -235,12 +235,14 @@
 #project-search-bar{
   width: 60em;
   height: 6em;
-  background-color: pink;
+  background-color: white;
   margin: 0 auto;
-
+  border-radius: 15px;
   display: block;
   position: relative;
-  top: 1em
+  top: 1em;
+  border: solid black 0.1em;
+  position: relative;
 }
 
 #project-container{
@@ -248,29 +250,117 @@
 }
 
 .project-frame{
-  background-color: blue;
-  width: 15em;
-  height: 17em;
+  background-color: transparent;
+  width: 25em;
+  height: 27em;
   display: inline-block;
   margin: 2em 1.5em 2em 1.5em;
   margin-top: 3em;
   overflow: hidden;
+  perspective: 1000px;
+  border-radius: 15px;
+
+
 }
 
-.project-frame details{
-  position: relative;
-  display: block;
-  top: 2em;
-}
+
 
 .project-box{
   position: relative;
-  background-color: purple;
-  height: 10em;
-  width: 13em;
-  top: 1em;
-  left: 1em;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: ease 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
 
+
+}
+
+.project-frame:hover .project-box{
+  transform: rotateY(180deg);
+}
+
+.project-front, .project-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibilitiy: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+.project-front{
+  background-color: tan;
+  color: black;
+}
+
+.greyout{
+  filter: grayscale(100%);
+}
+
+.project-back{
+  background-color: Black;
+  color: white;
+  transform:  rotateY(180deg);
+}
+
+.project-img{
+  width: 85%;
+  height: 60%;
+  border-radius: 15px;
+  border: solid Black 0.1em;
+}
+
+.small-badge{
+  width: 3em;
+  height: 3em;
+}
+
+.project-links{
+  width: 100%;
+  height: 33%;
+  background-color: WHITE;
+
+}
+
+.project-social-link{
+  position: relative;
+  top: -1em;
+
+
+}
+
+.projects-socials{
+  padding-top:  1em;
+
+}
+.front-title{
+  background-color: #5B9BFF;
+  height: 10%;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+.back-title{
+  width: 100%;
+  height: 10%;
+  margin: 0;
+  background-color: tan;
+  margin-bottom: 2em;
+}
+
+.back-summary{
+
+  width: 100%;
+  height: 50%;
+  margin: 0;
+}
+.link-details{
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 
@@ -282,7 +372,7 @@
 
 .skill-bar{
   width: 12em;
-  height: 90%;
+  height: 100%;
   position: relative;
   margin-top: 0;
   z-index: 2;
@@ -311,7 +401,7 @@
   height: 6em;
   padding-bottom:  1em;
   position: relative;
-  left: 3em
+  left: 3em;
 
 }
 /* ****** Blog ******** */
@@ -411,10 +501,30 @@ ul:first-child::before{
 /* ****** Contacts ******** */
 
 
-form{
+#contact-form-container{
+  width: 70em;
+  height: 25em;
+  background-color: white;
   position: relative;
-  left: 20em;
+  top: 6em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5);
 }
+
+.contact-items{
+  position: relative;
+  top: 2em;
+}
+.contact-label{
+  display: block;
+  margin-bottom: 0.5em;
+}
+.label-div{
+  display: inline-block;
+  margin: 1em 3em 1em 3em;
+}
+
 
 /* ****** Learning ******** */
 .learning-column{
@@ -422,13 +532,14 @@ form{
   width: 40em;
   box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.5);
   display: inline-block;
-  margin-left: 13em;
+  margin-left: 2em;
   text-align: center;
   position: relative;
   top: 5%;
   background-color: white;
   justify-content: center;
   overflow: hidden;
+  border-radius: 5px;
 }
 .learning-column h1::after{
   content: '';
@@ -485,20 +596,5 @@ footer{
 .soicals-img{
   width: 2em;
   height: 2em;
-
-}
-#twitter{
-
-}
-#pinterest{
-
-}
-#instagram{
-
-}
-#codepen{
-
-}
-#github{
 
 }
