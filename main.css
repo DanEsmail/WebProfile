@@ -137,30 +137,37 @@ h2{
 
 .about-div{
   height: 80%;
+  margin: 5%;
 
 }
 #about-pic{
-  width: 35%;
-  height: 35%;
+  width: 80%;
+  height: 80%;
   padding: 5%;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 20%;
+
 }
 
 #about-picture{
   height: 50%;
   width: 40%;
-  flex: 0 2 auto;
+  flex: 1 1 auto;
   display: flex;
   justify-content: center;
+
 
 }
 
 #about-article{
   height: 80%;
   width: 40%;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   background-color: white;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5);
   text-align: center;
+  border-radius: 10%;
 }
 
 #about-article *{
@@ -203,6 +210,7 @@ h2{
 .small-badge{
   width: 3em;
   height: 3em;
+  padding: 2%;
   flex: 1 1 auto;
 }
 
@@ -210,6 +218,7 @@ h2{
   background-color: transparent;
   width: 20em;
   height: 22em;
+  max-width: 400px;
   display: inline-block;
   margin: 2em 1.5em 2em 1.5em;
   margin-top: 3em;
@@ -259,6 +268,8 @@ h2{
   background-color: Black;
   color: white;
   transform:  rotateY(180deg);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-img{
@@ -274,7 +285,8 @@ h2{
   width: 100%;
   height: 33%;
   background-color: WHITE;
-
+  align-self: flex-end;
+  flex: 1 1 auto;
 }
 
 .project-social-link{
@@ -301,13 +313,16 @@ h2{
   margin: 0;
   background-color: tan;
   margin-bottom: 2em;
+  flex: 1 1 auto;
+
 }
 
 .back-summary{
 
   width: 100%;
-  height: 50%;
+  height: 40%;
   margin: 0;
+  flex: 2 1 auto;
 }
 .link-details{
   margin-left: 2em;
@@ -321,6 +336,7 @@ h2{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 
@@ -333,12 +349,13 @@ h2{
   display: flex;
   flex-direction: column;
   align-items:  center;
+  min-width: 100px;
 }
 
 .skill-badge{
   display: grid;
-  width: 6em;
-  height: 6em;
+  width: 60%;
+  height: 60%;
   padding-bottom:  1em;
 
 
@@ -349,6 +366,7 @@ h2{
 #blog-body{
   display: flex;
   justify-content: space-around;
+
 }
 
 
@@ -361,6 +379,8 @@ h2{
   display: flex;
   flex-direction: column;
   align-content: center;
+
+
 
 }
 
@@ -375,6 +395,7 @@ h2{
   display:  flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .blog-column{
@@ -383,6 +404,7 @@ h2{
   justify-content: space-between;
   width: 40%;
   float: right;
+  min-width: 300px;
 }
 
 
@@ -452,18 +474,13 @@ h2{
 }
 
 #contact-form-container{
-  width: 70em;
-  height: 25em;
+  width: 80%;
   background-color: white;
   margin: 5%;
   text-align: center;
   box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.5);
 }
 
-.contact-items{
-  position: relative;
-  top: 2em;
-}
 .contact-label{
   display: block;
   margin-bottom: 0.5em;
@@ -473,12 +490,18 @@ h2{
   margin: 1em 3em 1em 3em;
 }
 
+textarea{
+  width: 90%;
+  height: 20%;
+}
+
 /* ****** Learning ******** */
 
 #learning-body{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 
@@ -494,6 +517,7 @@ h2{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 300px;
 }
 .learning-column h1::after{
   content: '';
@@ -528,6 +552,17 @@ h2{
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+
+}
+
+.learning-badge{
+  height: 90%;
+  width: 35%;
+  min-height: 50px;
+  min-width: 50px;
+  max-width: 100px;
+  max-height: 100px;
+  flex: 1 1 auto;
 }
 
 /*-------------------footer---------------------------*/
